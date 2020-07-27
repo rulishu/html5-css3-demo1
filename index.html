@@ -48,7 +48,7 @@
         #八卦>div:first-child {
             /* border: 1px solid green; */
             width: 200px;
-            height: 400px;
+            height: 100%;
             position: absolute;
             left: 0;
             background: black;
@@ -56,16 +56,14 @@
 
         @media(max-width:500px) {
             #八卦>div:first-child {
-                widows: 100px;
-                ;
-                height: 200px;
+                width: 100px;
             }
         }
 
         #八卦>div:nth-child(2) {
             /* border: 1px solid grey; */
             width: 200px;
-            height: 400px;
+            height: 100%;
             position: absolute;
             right: 0;
             background: white;
@@ -74,7 +72,6 @@
         @media(max-width: 500px) {
             #八卦>div:nth-child(2) {
                 width: 100px;
-                height: 200px;
             }
         }
 
@@ -94,7 +91,6 @@
                 width: 100px;
                 height: 100px;
                 margin-left: -50px;
-
             }
         }
 
@@ -115,7 +111,6 @@
                 width: 100px;
                 height: 100px;
                 margin-left: -50px;
-
             }
         }
 
@@ -137,41 +132,42 @@
                 height: 25px;
                 top: 37.5px;
                 margin-left: -12.5px;
-
             }
+        }
 
+        #八卦>div:nth-child(6) {
+            /* border: 1px solid red; */
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: 75px;
+            margin-left: -25px;
+            border-radius: 100px;
+            background: black;
+        }
+
+        @media(max-width:500px) {
             #八卦>div:nth-child(6) {
-                /* border: 1px solid red; */
-                width: 50px;
-                height: 50px;
-                position: absolute;
-                left: 50%;
-                bottom: 75px;
-                margin-left: -25px;
-                border-radius: 100px;
-                background: black;
+                width: 25px;
+                height: 25px;
+                bottom: 37.5px;
+                margin-left: -12.5px;
             }
+        }
 
-            @media(max-width:500px) {
-                #八卦>div:nth-child(6) {
-                    width: 25px;
-                    height: 25px;
-                    bottom: 37.5px;
-                    margin-left: -12.5px;
-                }
+        #wrapper {
+            /* border: 1px solid red; */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-                #wrapper {
-                    /* border: 1px solid red; */
-                    height: 100vh;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                #八卦-描述 {
-                    margin-top: 1em;
-                }
+        #八卦-描述 {
+            margin-top: 1em;
+        }
     </style>
 </head>
 
